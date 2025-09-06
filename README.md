@@ -1,46 +1,86 @@
-# Getting Started with Create React App
+# FunWords - 高考趣味背单词游戏
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+一个基于React的像素风格词汇学习游戏，专为高中生设计。
 
-## Available Scripts
+## 功能特点
 
-In the project directory, you can run:
+### 🎮 游戏特色
+- **三种题型**: 选择题、拼写题、听音选词
+- **生命值系统**: 3条命，答错扣除生命值
+- **连击奖励**: 连续答对3题有特效，5题奖励额外生命
+- **像素风格**: 魂斗罗风格的复古界面设计
 
-### `npm start`
+### 📱 技术特点
+- **PWA支持**: 可安装到桌面，支持离线使用
+- **本地存储**: 使用IndexedDB存储进度和成绩
+- **响应式设计**: 适配各种屏幕尺寸
+- **音效系统**: 像素风格的8-bit音效
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### 🎯 学习功能
+- **智能出题**: 随机生成题目，避免重复
+- **进度跟踪**: 记录每个单词的正确/错误次数
+- **成绩统计**: 显示正确率、最高连击等数据
+- **奖牌系统**: S/A/B/C四个等级的成就评定
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## 技术栈
 
-### `npm test`
+- **前端**: React 18 + TypeScript
+- **样式**: 自定义CSS (像素风格)
+- **数据存储**: IndexedDB
+- **音效**: Web Audio API
+- **字体**: Press Start 2P (像素字体)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 本地开发
 
-### `npm run build`
+### 安装依赖
+```bash
+npm install
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 启动开发服务器
+```bash
+npm start
+```
+应用将在 http://localhost:3000 运行。
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 构建生产版本
+```bash
+npm run build
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 部署
 
-### `npm run eject`
+### 推荐部署平台
+- **Vercel**: 最佳选择，支持自动部署
+- **Netlify**: 备选方案，同样优秀
+- **GitHub Pages**: 免费选项
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Vercel部署步骤
+1. 将代码推送到GitHub仓库
+2. 访问 [vercel.com](https://vercel.com)
+3. 连接GitHub账号并导入仓库
+4. Vercel会自动部署项目
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 游戏玩法
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+1. **开始游戏**: 点击"START GAME"按钮
+2. **答题**: 根据题目类型选择或输入答案
+3. **使用提示**: 每局游戏有2次提示机会
+4. **争取连击**: 连续答对获得特殊奖励
+5. **查看成绩**: 游戏结束后查看详细统计
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## 词汇数据
 
-## Learn More
+当前包含50个示例单词，可扩展至完整的高考3500词汇。词汇数据位于 `src/data/vocabulary.ts`。
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 贡献
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+欢迎提交Issue和Pull Request来改进游戏！
+
+## 许可证
+
+MIT License
+
+---
+
+🎮 **尽情享受学习的乐趣！** 🎮
